@@ -1,5 +1,5 @@
 PKG_NAME := clr-network-troubleshooter
-URL = https://github.com/clearlinux/clr-network-troubleshooter/archive/v13/clr-network-troubleshooter-13.tar.gz
+URL = https://github.com/clearlinux/clr-network-troubleshooter/archive/v14/clr-network-troubleshooter-14.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
