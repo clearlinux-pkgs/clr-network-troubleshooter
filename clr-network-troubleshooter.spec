@@ -4,7 +4,7 @@
 #
 Name     : clr-network-troubleshooter
 Version  : 20
-Release  : 20
+Release  : 21
 URL      : https://github.com/clearlinux/clr-network-troubleshooter/archive/v20/clr-network-troubleshooter-20.tar.gz
 Source0  : https://github.com/clearlinux/clr-network-troubleshooter/archive/v20/clr-network-troubleshooter-20.tar.gz
 Summary  : No detailed summary available
