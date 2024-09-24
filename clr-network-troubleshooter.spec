@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : clr-network-troubleshooter
-Version  : 21
-Release  : 23
-URL      : https://github.com/clearlinux/clr-network-troubleshooter/archive/v21/clr-network-troubleshooter-21.tar.gz
-Source0  : https://github.com/clearlinux/clr-network-troubleshooter/archive/v21/clr-network-troubleshooter-21.tar.gz
+Version  : 22
+Release  : 24
+URL      : https://github.com/clearlinux/clr-network-troubleshooter/archive/v22/clr-network-troubleshooter-22.tar.gz
+Source0  : https://github.com/clearlinux/clr-network-troubleshooter/archive/v22/clr-network-troubleshooter-22.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -48,10 +48,10 @@ license components for the clr-network-troubleshooter package.
 
 
 %prep
-%setup -q -n clr-network-troubleshooter-21
-cd %{_builddir}/clr-network-troubleshooter-21
+%setup -q -n clr-network-troubleshooter-22
+cd %{_builddir}/clr-network-troubleshooter-22
 pushd ..
-cp -a clr-network-troubleshooter-21 buildavx2
+cp -a clr-network-troubleshooter-22 buildavx2
 popd
 
 %build
@@ -59,7 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1727187823
+export SOURCE_DATE_EPOCH=1727211294
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
@@ -106,7 +106,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1727187823
+export SOURCE_DATE_EPOCH=1727211294
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/clr-network-troubleshooter
 cp %{_builddir}/clr-network-troubleshooter-%{version}/COPYING %{buildroot}/usr/share/package-licenses/clr-network-troubleshooter/4cc77b90af91e615a64ae04893fdffa7939db84c || :
